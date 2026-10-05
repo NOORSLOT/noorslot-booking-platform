@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="NOORSLOT is your local beauty and grooming booking platform — find the right professional, choose your service, pick your time, and book your slot with ease. Grooming made simple, personal, and local.">
+      <meta name="robots" content="index, follow">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>NOORSLOT | Your Local Beauty & Grooming Booking Platform</title>
+   </head>
+   <body>
+      <!--==================== HEADER & NAV ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="/index.html" class="nav__logo">NOORSLOT</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#work" class="nav__link">Works</a>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="my-booking.html"  class="nav__link">My Booking</a>
+                    </li>
+
+                    <li>
+                        <a href="#expert" class="nav__link">Professionals</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav__link nav__button">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- Close -->
+                <button class="nav__close" id="nav-close">
+                    <i class="ri-close-large-fill"></i>
+                </button>
+            </div>
+
+            <!-- Toggle -->
+            <button class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-fill"></i>
+            </button>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+
+         <!--==================== HOME SECTION ====================-->
+         <section class="home" id="home">
+            <img src="assets/img/home-bg.png" alt="Beauty and grooming professionals on NOORSLOT" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <img src="assets/img/home-logo-noorslot.png" alt="Booking Platform" class="home__logo">
+
+                    <h1 class="home__title">FIND. BOOK. GROOM.</h1>
+                    <p class="home__description">
+                        Book trusted barbers, salons & beauty professionals near you.
+                        Choose a service, select your time, and book your appointment easily.
+                    </p>
+
+                    <a href="#booking" class="button">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+         </section>
+
+
+         <!--==================== CATEGORY SECTION ====================-->
+         <section class="category section" id="category">
+
+             <div class="category__container container">
+
+                 <h2 class="section__title">
+                     FIND YOUR SERVICE
+                 </h2>
+
+                 <p class="category__description">
+                     Choose the service you need and find the right professional near you.
+                 </p>
+
+                 <!-- LOCATION -->
+                 <div class="category__location">
+
+                     <label for="userArea">Your Area</label>
+
+                     <select id="userArea">
+
+                         <option value="">Select your area</option>
+                         <option value="Sasaram">Sasaram</option>
+                         <option value="Sitamarhi">Sitamarhi</option>
+                         <option value="Patna">Patna</option>
+                         <option value="Gaya">Gaya</option>
+                         <option value="Muzaffarpur">Muzaffarpur</option>
+                         <option value="Other">Other</option>
+
+                     </select>
+
+                     <button
+                         type="button"
+                         id="useMyLocation"
+                         class="button category__location-button">
+
+                         <i class="ri-map-pin-line"></i>
+                         Use My Location
+
+                     </button>
+
+                 </div>
+
+                 <div class="category__buttons">
+
+                     <button
+                         type="button"
+                         class="button category__button"
+                         id="barberCategoryBtn">
+
+                         <i class="ri-scissors-2-line"></i>
+                         Barbers
+
+                     </button>
+
+
+                     <button
+                         type="button"
+                         class="button category__button"
+                         id="beautyCategoryBtn">
+
+                         <i class="ri-heart-3-line"></i>
+                         Beauty / Makeup
+
+                     </button>
+
+                 </div>
+
+
+                 <!-- PROVIDER LIST -->
+
+                 <div
+                     id="providerList"
+                     class="provider-list">
+
+                 </div>
+
+                 <!-- PROVIDER ENTRY -->
+
+                 <div style="text-align:center; margin-top:35px;">
+
+                     <p style="margin-bottom:15px;  font-weight:500;">
+                         Are you a beauty or grooming  professional?
+                     </p>
+
+                     <a
+                         href="provider-signup.html"
+                         class="button"
+                         style="display:inline-block; margin:5px; ">
+                         Join as Provider
+                     </a>
+
+                     <a
+                         href="provider-login.html"
+                         class="button"
+                         style="display:inline-block; margin:5px; ">
+                         Provider Login
+                     </a>
+
+                 </div>
+
+             </div>
+
+         </section>
+
+         <!--==================== ABOUT SECTION ====================-->
+         <section class="about section" id="about">
+             <div class="about__container container grid">
+
+                 <div class="about__data">
+
+                     <h2 class="section__title">
+                         ABOUT <br> NOORSLOT
+                     </h2>
+
+                     <p class="about__description">
+                         NOORSLOT is a local beauty and grooming booking platformthat helps you discover professionals, explore their services, choose a convenient time, and book your appointment easily.
+                     </p>
+
+                     <div class="about__info">
+
+                         <div class="about__box">
+                             <p class="about__member">
+                                 <span class="about__counter">1</span>
+                             </p>
+
+                             <h3 class="about__subtitle">
+                                 SIMPLE <br> BOOKING
+                             </h3>
+                         </div>
+
+                         <div class="about__box">
+                             <p class="about__member">
+                                 <span class="about__counter">24</span>
+                                 <span>/7</span>
+                             </p>
+
+                             <h3 class="about__subtitle">
+                                DISCOVER <br> SERVICES
+                             </h3>
+                         </div>
+
+                     </div>
+
+                 </div>
+
+                 <img
+                     src="assets/img/about-img.png"
+                     alt="Beauty and grooming services"
+                     class="about__img"
+                 >
+
+             </div>
+         </section>
+
+         <!--==================== WORKS SECTION ====================-->
+         <section class="work section" id="work">
+            <div class="work__container container grid">
+                <div class="work__data swiper">
+                    <h2 class="section__title">DISCOVER <br> OUR WORK</h2>
+                    <p class="work__description">Our work includes both vintage and modern styles.We stay up-to-date with the latest trends to guarantee the best possible service.</p>
+
+                    <!-- Swiper pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Swiper arrows buttons -->
+                    <div class="swiper-button-prev"><i class="ri-arrow-left-long-line"></i></div>
+
+                    <div class="swiper-button-next"><i class="ri-arrow-right-long-line"></i></div>
+                </div>
+
+                <div class="work__swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-1.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-2.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-3.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-4.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-5.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-6.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-7.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-8.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-9.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-10.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-11.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-12.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-13.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-14.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-15.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-16.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-17.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-18.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-19.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-20.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-21.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-22.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-23.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-24.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <img src="assets/img/work-img-25.png" alt="Hair and beard cutting services" class="work__img">
+                        </article>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICE SECTION ====================-->
+         <section class="service section" id="services">
+
+             <div class="service__container container grid">
+
+                 <div class="service__data">
+
+                     <h2 class="section__title">
+                         SERVICES <br> ON NOORSLOT
+                     </h2>
+
+                     <p class="service__description">
+                         Explore services offered by local barbers,salons and beauty professionals on NOORSLOT.
+                         Prices and availability are provided by each professional.
+                     </p>
+
+                     <ul class="service__prices">
+
+                         <li class="service__plan">
+                             <h3 class="service__name">
+                                 HAIRCUT
+                             </h3>
+
+                             <p class="service__price">
+                                 From ₹
+                             </p>
+                         </li>
+
+                         <li class="service__plan">
+                             <h3 class="service__name">
+                                 BEARD & SHAVING
+                             </h3>
+
+                             <p class="service__price">
+                                 Provider Pricing
+                             </p>
+                         </li>
+
+                         <li class="service__plan">
+                             <h3 class="service__name">
+                                 BEAUTY & FACIAL
+                             </h3>
+
+                             <p class="service__price">
+                                 Provider Pricing
+                             </p>
+                         </li>
+
+                         <li class="service__plan">
+                             <h3 class="service__name">
+                                 MAKEUP
+                             </h3>
+
+                             <p class="service__price">
+                                 Provider Pricing
+                             </p>
+                         </li>
+
+                         <li class="service__plan">
+                             <h3 class="service__name">
+                                 OTHER SERVICES
+                             </h3>
+
+                             <p class="service__price">
+                                 Check Provider
+                             </p>
+                         </li>
+
+                     </ul>
+
+                 </div>
+
+                 <div class="service__swiper swiper">
+
+                     <div class="swiper-wrapper">
+
+                         <article class="service__testimonial swiper-slide">
+
+                             <p class="service__testimonial-description">
+                                 Choose a professional, explore their services,check available slots and book your appointment through NOORSLOT.
+                             </p>
+
+                             <h3 class="service__testimonial-name">
+                                 NOORSLOT
+                             </h3>
+
+                         </article>
+
+                         <article class="service__testimonial swiper-slide">
+
+                             <p class="service__testimonial-description">
+                                 Service prices and availability can vary
+                                 between professionals and locations.
+                             </p>
+
+                             <h3 class="service__testimonial-name">
+                                 Local Professionals
+                             </h3>
+
+                         </article>
+
+                         <article class="service__testimonial swiper-slide">
+
+                             <p class="service__testimonial-description">
+                                 Find the service you need and select a
+                                 convenient date and available time slot.
+                             </p>
+
+                             <h3 class="service__testimonial-name">
+                                 Easy Booking
+                             </h3>
+
+                         </article>
+
+                     </div>
+
+                     <div class="swiper-pagination"></div>
+
+                     <div class="swiper-button-prev">
+                         <i class="ri-arrow-left-line"></i>
+                     </div>
+
+                     <div class="swiper-button-next">
+                         <i class="ri-arrow-right-line"></i>
+                     </div>
+
+                 </div>
+
+             </div>
+
+         </section>
+
+         <!--==================== PROFESSIONALS SECTION ====================-->
+<section class="expert section" id="expert">
+
+    <div class="expert__container container">
+
+        <!-- SECTION HEADER -->
+        <div class="expert__header">
+
+            <div>
+                <span class="expert__subtitle">
+                    NOORSLOT 
+                    <br> 
+                    PROFESSIONALS
+                </span>
+
+                <h2 class="section__title">
+                    FIND YOUR
+                    <br>
+                    BEAUTY & GROOMING
+                    <br>
+                    PROFESSIONAL
+                </h2>
+            </div>
+
+            <p class="expert__description">
+                From everyday grooming to special occasions, discover
+                local professionals for your beauty, hair, makeup and
+                grooming needs. Explore their work and book your
+                preferred service through NOORSLOT.
+            </p>
+
+        </div>
+
+
+        <!-- PROFESSIONAL CATEGORIES -->
+        <div class="expert__content">
+
+
+            <!-- 01 HAIRCUT -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+                    <img
+                        src="assets/img/professional-1.png"
+                        alt="Haircut professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        HAIR
+                    </span>
+
+                    <h3 class="expert__name">
+                        Haircut Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Classic cuts, modern styles, fades,
+                        layers and everyday hair styling.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 02 SHAVING -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-2.png"
+                        alt="Shaving and beard grooming professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        GROOMING
+                    </span>
+
+                    <h3 class="expert__name">
+                        Shaving & Beard Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Clean shaving, beard shaping,
+                        trimming and professional grooming.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 03 BARBERS -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-3.png"
+                        alt="Barber professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        MEN
+                    </span>
+
+                    <h3 class="expert__name">
+                        Barbers
+                    </h3>
+
+                    <p class="expert__work">
+                        Professional barber services for
+                        haircuts, beard styling and grooming.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 04 BRIDAL MAKEUP -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-4.png"
+                        alt="Bridal makeup professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        BRIDAL
+                    </span>
+
+                    <h3 class="expert__name">
+                        Bridal Makeup Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Bridal looks, wedding makeup,
+                        hairstyles and complete occasion styling.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 05 GROOMS -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-5.png"
+                        alt="Groom styling professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        GROOM
+                    </span>
+
+                    <h3 class="expert__name">
+                        Groom Styling Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Groom makeup, hairstyle, beard styling
+                        and complete wedding-day grooming.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 06 MAKEUP -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-6.png"
+                        alt="Makeup professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        MAKEUP
+                    </span>
+
+                    <h3 class="expert__name">
+                        Makeup Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Professional makeup looks for
+                        parties, events, photoshoots and occasions.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 07 CASUAL MAKEUP -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-7.png"
+                        alt="Casual makeup professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        EVERYDAY
+                    </span>
+
+                    <h3 class="expert__name">
+                        Casual Makeup Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Natural, simple and elegant makeup
+                        for everyday outings and occasions.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 08 PARTY / EVENT -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-8.png"
+                        alt="Party makeup professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        EVENTS
+                    </span>
+
+                    <h3 class="expert__name">
+                        Party & Event Makeup
+                    </h3>
+
+                    <p class="expert__work">
+                        Glamorous looks for parties,
+                        celebrations, functions and special events.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 09 NAILS -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-9.png"
+                        alt="Nail professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        NAILS
+                    </span>
+
+                    <h3 class="expert__name">
+                        Nail Art Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Nail paint, nail art, manicure,
+                        extensions and creative nail designs.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 10 MEHENDI -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-10.png"
+                        alt="Mehendi professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        TRADITIONAL
+                    </span>
+
+                    <h3 class="expert__name">
+                        Mehendi Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Bridal mehendi, traditional designs,
+                        Arabic patterns and personalized mehendi.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 11 TRADITIONAL MAKEUP -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-11.png"
+                        alt="Traditional makeup professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        TRADITIONAL
+                    </span>
+
+                    <h3 class="expert__name">
+                        Traditional Makeup
+                    </h3>
+
+                    <p class="expert__work">
+                        Traditional Indian makeup looks,
+                        hairstyles and cultural occasion styling.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 12 SIMPLE MAKEUP -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-12.png"
+                        alt="Simple makeup professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        SIMPLE LOOK
+                    </span>
+
+                    <h3 class="expert__name">
+                        Simple Makeup
+                    </h3>
+
+                    <p class="expert__work">
+                        Clean, subtle and natural makeup
+                        for a fresh everyday appearance.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 13 HAIR STYLING -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-13.png"
+                        alt="Hair styling professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        HAIR
+                    </span>
+
+                    <h3 class="expert__name">
+                        Hair Styling Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Hair styling, blow-dry, curls,
+                        straightening and occasion hairstyles.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 14 SKIN CARE -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-14.png"
+                        alt="Skin care professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        SKIN CARE
+                    </span>
+
+                    <h3 class="expert__name">
+                        Skin & Facial Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Facial, cleanup, basic skincare
+                        and beauty care services.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 15 DATING / SPECIAL OCCASION -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-15.png"
+                        alt="Special occasion makeup professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        SPECIAL OCCASION
+                    </span>
+
+                    <h3 class="expert__name">
+                        Occasion Makeup Experts
+                    </h3>
+
+                    <p class="expert__work">
+                        Personalized looks for dates,
+                        dinners, celebrations and memorable occasions.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- 16 MASSAG PROFESSIONALS -->
+            <article class="expert__card">
+
+                <div class="expert__image-box">
+
+                    <img
+                        src="assets/img/professional-16.png"
+                        alt="Massag professionals"
+                        class="expert__img"
+                    >
+
+                </div>
+
+                <div class="expert__data">
+
+                    <span class="expert__category">
+                        MASSAGE & WELLINESS
+                    </span>
+
+                    <h3 class="expert__name">
+                        Massage Professionals
+                    </h3>
+
+                    <p class="expert__work">
+                        Relaxing and wellness-focused massage services for stress relief, relaxation and self-care.
+                    </p>
+
+                    <a href="#" class="expert__link">
+                        Explore Professionals
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+         <!-- ===============BOOKING SECTION ================ -->
+         <section class="booking section" id="booking">
+
+             <div class="booking__container container">
+
+                 <div class="booking__data">
+
+                     <h2 class="section__title">
+                         BOOK YOUR APPOINTMENT
+                     </h2>
+
+                     <p class="booking__description">
+                         Find your service, choose a professional, and book the time that works for you.
+                     </p>
+
+                     <form class="booking__form" id="booking-form">
+
+                         <div class="booking__group">
+
+                             <label for="service">
+                                 Service
+                             </label>
+
+                             <select id="service" name="service" required>
+                                 <option value="">
+                                     Select a service
+                                 </option>
+                             </select>
+
+                         </div>
+
+
+                         <div class="booking__group">
+
+                             <label for="barber">
+                                 Professionals
+                             </label>
+
+                             <select id="barber" name="barber" required>
+                                 <option value="">Loading provider...</option>
+                             </select>
+
+                         </div>
+
+
+                         <div class="booking__group">
+
+                             <label for="date">
+                                 Date
+                             </label>
+
+                             <input
+                                 type="date"
+                                 id="date"
+                                 name="date"
+                                 required>
+
+                         </div>
+
+
+                         <div class="booking__group">
+                             <label for="time">Time</label>
+                             <select id="time" required>
+                                 <option value="">Select a time</option>
+                             </select>
+                         </div>
+
+
+                         <div class="booking__group">
+
+                             <label for="customerName">
+                                 Your Name
+                             </label>
+
+                             <input
+                                 type="text"
+                                 id="customerName"
+                                 name="customerName"
+                                 placeholder="Enter your name"
+                                 required>
+
+                         </div>
+
+
+                         <div class="booking__group">
+
+                             <label for="phone">
+                                 Phone Number
+                             </label>
+
+                             <input
+                                 type="tel"
+                                 id="phone"
+                                 name="phone"
+                                 placeholder="Enter 10-digit phone number"
+                                 maxlength="10"
+                                 pattern="[0-9]{10}"
+                                 required>
+
+                         </div>
+
+
+                         <button
+                             type="submit"
+                             class="button booking__button">
+
+                             Book Appointment
+
+                         </button>
+
+                     </form>
+
+                     <div class="booking__provider-message">
+                        <h3>Are you a beauty or grooming professional?</h3>
+                        <p>
+                            Join NOORSLOT and help customers discover
+                            and book your services.
+                        </p>
+                        <a href="provider-signup.html" class="button">
+                            Join as Provider
+                        </a>
+                    </div>
+
+                 </div>
+
+             </div>
+
+         </section>
+
+         <!--==================== CONTACT SECTION ====================-->
+         <section class="contact section" id="contact">         
+
+             <div class="contact__container container grid">
+
+                 <div class="contact__data">
+
+                     <h2 class="section__title">
+                         FIND YOUR <br> PROFESSIONAL
+                     </h2>
+
+                     <p class="contact__description">
+                         Looking for a barber, salon or beauty professional?
+                         Discover providers on NOORSLOT and book a convenient
+                         appointment for your selected service.
+                     </p>
+
+                     <a href="#category" class="button">
+                         Find a Professional
+                     </a>
+
+                 </div>
+
+                 <div class="contact__content">
+
+                     <article class="contact__card">
+
+                         <div class="contact__icon">
+                             <i class="ri-map-pin-2-fill"></i>
+                         </div>
+
+                         <div class="contact__info">
+
+                             <h3 class="contact__title">
+                                 LOCAL SERVICES
+                             </h3>
+
+                             <p class="contact__address">
+                                 Discover beauty and grooming
+                                 professionals in your area.
+                             </p>
+
+                         </div>
+
+                     </article>
+
+
+                     <article class="contact__card">
+
+                         <div class="contact__icon">
+                             <i class="ri-scissors-2-fill"></i>
+                         </div>
+
+                         <div class="contact__info">
+
+                             <h3 class="contact__title">
+                                 CHOOSE YOUR SERVICE
+                             </h3>
+
+                             <p class="contact__address">
+                                 Haircut, beard, beauty, makeup
+                                 and other services.
+                             </p>
+
+                         </div>
+
+                     </article>
+
+
+                     <article class="contact__card">
+
+                         <div class="contact__icon">
+                             <i class="ri-calendar-check-fill"></i>
+                         </div>
+
+                         <div class="contact__info">
+
+                             <h3 class="contact__title">
+                                 BOOK YOUR TIME
+                             </h3>
+
+                             <p class="contact__address">
+                                 Select an available date and
+                                 time and confirm your booking.
+                             </p>
+
+                         </div>
+
+                     </article>
+
+                 </div>
+
+             </div>
+
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__data">
+                <a href="" class="footer__logo">NOORSLOT</a>
+                <p class="footer__description">
+                    Find. Book. Groom.<br>
+                    Barbers, salons & beauty professionals near you.
+                </p>
+
+                <address class="footer__email">
+                    <a href="mailto:NOORSLOT420@gmail.com">NOORSLOT420@gmail.com</a>
+                </address>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Menu</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#about" class="footer__link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#work" class="footer__link">Works</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Write to us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://wa.me/918709785713" target="_blank" class="button">WhatsApp</a>
+                        </li>
+
+                        <li>
+                            <a href="https://m.me/ankit.prakash" target="_blank" class="footer__link">Messenger</a>
+                        </li>
+
+                        <li>
+                            <a href="https://web.telegram.org/k/" target="_blank" class="footer__link">Telegram</a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:NOORSLOT420@gmail.com" target="_blank" class="footer__link">Gmail</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+         </div>
+
+         <div class="footer__social-section">
+            <h3 class="footer__title">Social</h3>
+
+            <ul class="footer__social">
+               <li>
+                  <a href="https://www.facebook.com/profile.php?id=61576150971531" class="footer__social-link"><i class="ri-facebook-circle-fill"></i></a>
+               </li>
+
+               <li>
+                  <a href="https://www.instagram.com/noorslot_26/" class="footer__social-link"><i class="ri-instagram-fill"></i></a>
+               </li>
+
+               <li>
+                  <a href="https://x.com/NOORSLOT" class="footer__social-link"><i class="ri-twitter-x-line"></i></a>
+               </li>
+
+               <li>
+                  <a href="https://www.youtube.com/@NOORSLOT" class="footer__social-link"><i class="ri-youtube-fill"></i></a>
+               </li>
+            </ul>
+         </div>
+
+         <small class="footer__copy">&#169; All Rights Reserved By NOORSLOT</small>
+      </footer>
+
+      
+      <!-- BOOKING SUCCESS MODAL -->
+
+      <div id="booking-modal" class="booking-modal">
+
+          <div class="booking-modal-content">
+
+              <button id="close-booking-modal" class="close-modal">
+                  &times;
+              </button>
+
+              <div class="success-icon">
+            ✓
+              </div>
+
+              <h2>Booking Confirmed!</h2>
+
+              <p class="success-message">
+                  Your appointment has been successfully booked.
+              </p>
+
+              <div class="booking-details">
+
+                  <p>
+                     <strong>Booking Code:</strong>
+                     <span id="confirm-code"></span>
+                  </p>
+
+                  <p>
+                      <strong>Customer:</strong>
+                      <span id="confirm-name"></span>
+                  </p>
+
+                  <p>
+                      <strong>Service:</strong>
+                      <span id="confirm-service"></span>
+                  </p>
+
+                  <p>
+                      <strong>Professional:</strong>
+                      <span id="confirm-barber"></span>
+                  </p>
+
+                  <p>
+                      <strong>Date:</strong>
+                      <span id="confirm-date"></span>
+                  </p>
+
+                  <p>
+                      <strong>Time:</strong>
+                      <span id="confirm-time"></span>
+                  </p>
+
+              </div>
+
+              <button id="whatsapp-confirmation" class="whatsapp-btn" type="button">
+                  Send confirmation on WhatsApp
+              </button>
+
+              <div class="booking-manage-actions">
+                  <button id="show-reschedule" class="manage-btn" type="button">Reschedule</button>
+                  <button id="cancel-booking" class="cancel-btn" type="button">Cancel appointment</button>
+              </div>
+
+              <div id="reschedule-panel" class="reschedule-panel" hidden>
+                  <label for="reschedule-date">New date</label>
+                  <input id="reschedule-date" type="date">
+                  <label for="reschedule-time">New time</label>
+                  <select id="reschedule-time"><option value="">Select a time</option></select>
+                  <button id="save-reschedule" class="done-btn" type="button">Save new time</button>
+              </div>
+
+              <button id="done-booking" class="done-btn">
+                  Done
+              </button>
+
+          </div>
+
+      </div>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== GSAP ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+      <!--=============== SCRIPT JS ===============-->
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
