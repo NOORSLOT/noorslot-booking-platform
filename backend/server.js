@@ -19,7 +19,18 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-const client = new MongoClient(process.env.MONGODB_URI);
+// Purani line hata kar yeh safe connection code likhein:
+const dbURI = process.env.MONGODB_URI ? process.env.MONGODB_URI.trim().replace(/[\u200B-\u200D\uFEFF]/g, '') : '';
+
+if (!dbURI) {
+    console.error("❌ ERROR: MONGODB_URI `.env` file se load nahi ho payi!");
+    process.exit(1);
+}
+
+const client = new MongoClient(dbURI);
+
+
+
 
 let db;
 
@@ -71,17 +82,24 @@ async function connectDB() {
 
         console.log("MongoDB connected successfully!");
 
-    } catch (error) {
+    
+        } catch (error) {
+            console.error("MongoDB connection failed:", error);
+            throw error;
+        }
 
-        console.error(
-            "MongoDB connection failed:",
-            error
-        );
-
-    }
 }
 
-connectDB();
+connectDB()
+  .then(() => {
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error("Database startup failed:", error);
+    process.exit(1);
+  });
 
 // ===============================
 // CORS CONFIGURATION
@@ -2068,7 +2086,7 @@ app.post("/api/auth/forgot-password", async (req, res) => {
         }
 
         const resetLink =
-            `${frontendUrl}/reset-password.html?token=${rawToken}&type=$         {accountType}`;
+            `${frontendUrl}/reset-password.html?token=${rawToken}&type=${accountType}`;
 
 
         // --------------------------------
@@ -4142,6 +4160,3 @@ app.get("/api/public/providers/:providerId/reviews", async (req, res) => {
     }
 });
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running on port ${PORT}`);
-});
